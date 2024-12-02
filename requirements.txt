@@ -1,6 +1,5 @@
 openai
-tavily
+tavily-python
 langchain
-whisper
+openai-whisper
 fastapi
-email
