@@ -1,0 +1,6 @@
+openai
+tavily
+langchain
+whisper
+fastapi
+email
