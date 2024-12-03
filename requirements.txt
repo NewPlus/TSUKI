@@ -3,3 +3,4 @@ tavily-python
 langchain
 openai-whisper
 fastapi
+pytest
