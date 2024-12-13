@@ -4,7 +4,7 @@
 
 # TSUKI - Technology Supported User Knowledge Interface
 
-[![CI TSUKI](https://github.com/NewPlus/TSUKI/actions/workflows/node.js.yml/badge.svg)](https://github.com/NewPlus/TSUKI/actions/workflows/node.js.yml)
+[![CI TSUKI](https://github.com/NewPlus/TSUKI/actions/workflows/python-app.yml/badge.svg)](https://github.com/NewPlus/TSUKI/actions/workflows/python-app.yml)
 
 
 현대 사회에서는 정보의 양이 폭발적으로 증가함에 따라 사용자들이 필요한 정보를 효율적으로 받아들이는 것이 중요해졌습니다. 특히, 매일 아침 최신 뉴스를 빠르고 간편하게 접하는 것은 바쁜 현대인들에게 큰 가치를 제공합니다.
