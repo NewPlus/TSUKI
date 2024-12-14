@@ -18,3 +18,138 @@ summarize_news_prompt = """# 페르소나:
 # 뉴스 요약
 - 뉴스 기사: {content}
 - 요약 뉴스: """
+
+html_news_letter_header = """<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <style>
+    /* Reset styles for email clients */
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    
+    /* Main styles */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    .header {
+      padding: 40px 20px;
+      background-color: #000000;
+      color: #ffffff;
+    }
+    
+    .content {
+      padding: 20px;
+    }
+    
+    .article {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 40px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .article:hover {
+      background-color: #f9f9f9;
+    }
+    
+    .article-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #000000;
+    }
+    
+    .article-meta {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    
+    .article-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    
+    .article-excerpt {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333333;
+      margin-bottom: 16px;
+    }
+    
+    .read-more {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #000000;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    .read-more:visited {
+      color: #ffffff !important;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+      }
+      
+      .content {
+        padding: 16px !important;
+      }
+      
+      .article-title {
+        font-size: 20px !important;
+      }
+    }
+  </style>
+</head>
+"""
+
+html_news_letter_body = """
+<body>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td>
+        <table class="container" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td class="header">
+              <h1 style="margin: 0; font-size: 32px;">Newsletter</h1>
+            </td>
+          </tr>
+          <tr>
+            <td class="content">
+              {content}
+            </td>
+            
+          </tr>
+        </table>
+"""
+
+html_news_letter_footer = """
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+"""
